@@ -9,9 +9,12 @@ print("Welcome,", name)
 location = "Beach"
 
 while True:
-    choice = input("Type 1 to look around, or q to quit: ").strip().lower()
+    choice = input("1 = look around, 2 = go to the jungle, q = quit: ").strip().lower()
     if choice == "1":
         print("You are at the", location)
+    elif choice == "2":
+        location = "Jungle"
+        print("Thick vines hang around you. Welcome to the jungle.")
     elif choice == "q":
         print("see ya later")
         break
